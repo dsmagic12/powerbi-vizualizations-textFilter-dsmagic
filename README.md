@@ -2,7 +2,7 @@
 An improved version of the Power BI Text Filter visualization originally published by Microsoft, with more customization options available
 
 ## setup and dependencies
-* node.js LTS (latest stable release), tested and built with 16.13.2
+* node.js LTS (latest stable release), this visual was tested and built with [node v16.13.2](https://nodejs.org/download/release/v16.13.2/)
 * pbviz should be installed globally `npm i -g powerbi-visuals-tools`
 * you must [create and install a certificate for pbviz](https://docs.microsoft.com/en-us/power-bi/developer/visuals/environment-setup?tabs=windows#create-and-install-a-certificate) `pbiviz --install-cert` 
 * note: you may need to manually install the generated certifacte
