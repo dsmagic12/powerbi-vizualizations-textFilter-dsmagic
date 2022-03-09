@@ -1,0 +1,17 @@
+{
+    "version": "1.2.1",
+    "author": {"name":"Microsoft","email":"msrvizsupport@microsoft.com"},
+    "resources": [
+        {
+            "resourceId": "rId0",
+            "sourceType": 5,
+            "file": "resources/textFilter25A4896A83E0487089E2B90C9AE57CDS.pbiviz.json"
+        }
+    ],
+    "visual": {"name":"textFilter","displayName":"Text Filter DS","guid":"textFilter25A4896A83E0487089E2B90C9AE57CDS","visualClassName":"Visual","version":"1.2.1","description":"Daniel Schauer's version of MS Text Filter. Provides a search box that can be placed anywhere in your dashboard. This adds a text filtering capability for quick searching across your data.","supportUrl":"https://community.powerbi.com","gitHubUrl":"https://github.com/microsoft/PowerBI-visuals-TextFilter"},
+    "metadata": {
+        "pbivizjson": {
+            "resourceId": "rId0"
+        }
+    }  
+}
