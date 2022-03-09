@@ -21,7 +21,11 @@ An improved version of the [Power BI Text Filter visualization originally publis
 * the following style changes were implemented:
   * the background color of the textbox and its inline search button has been set to show the visual's background color through 40% transparent white
   * the background color of the clear button to the right of the textbox
-* the visual was built by navigating to the project folder, the running the package command via powershell `pbiviz package`
+* the following property changes were made in `\pbiviz.json`:
+  * displayName = `Text Filter DS`
+  * guid = `textFilter25A4896A83E0487089E2B90C9AE57CDS`
+  * description = `Daniel Schauer's version of MS Text Filter. Provides a search box that can be placed anywhere in your dashboard. This adds a text filtering capability for quick searching across your data.`
+* **the visual was built by** navigating to the project folder, the running the package command via powershell `pbiviz package`
 
 ## How to Use It
 * Download the `src\textFilter25A4896A83E0487089E2B90C9AE57CDS.1.2.1.pbiviz` file
