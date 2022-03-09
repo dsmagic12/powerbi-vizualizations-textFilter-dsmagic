@@ -190,6 +190,7 @@ export class Visual implements IVisual {
           target,
           "And",
           {
+            /* does not contain support triggered by leading ! */
             operator: text.charAt(0) === "!" ? "DoesNotContain" : "Contains",
             value: text.replace(/^!/,"")
           }
