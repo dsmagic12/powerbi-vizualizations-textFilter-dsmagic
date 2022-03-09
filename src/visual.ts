@@ -175,13 +175,14 @@ export class Visual implements IVisual {
    * @param {string} text - text to filter on
    */
   public performSearch(text: string) {
+    let origSearch: string = text;
     if (this.column) {
       const isBlank = ((text || "") + "").match(/^\s*$/);
       const target = {
         table: this.column.queryName.substr(0, this.column.queryName.indexOf(".")),
         column: this.column.queryName.substr(this.column.queryName.indexOf(".") + 1)
       };
-
+      
       let filter: any = null;
       let action = FilterAction.remove;
       if (!isBlank) {
@@ -189,15 +190,15 @@ export class Visual implements IVisual {
           target,
           "And",
           {
-            operator: "Contains",
-            value: text
+            operator: text.charAt(0) === "!" ? "DoesNotContain" : "Contains",
+            value: text.replace(/^!/,"")
           }
         );
         action = FilterAction.merge;
       }
       this.host.applyJsonFilter(filter, "general", "filter", action);
     }
-    this.searchBox.property("value", text);
+    this.searchBox.property("value", origSearch);
   }
 
   private static parseSettings(dataView: DataView): VisualSettings {
