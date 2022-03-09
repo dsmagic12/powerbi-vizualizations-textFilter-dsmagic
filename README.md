@@ -1,5 +1,5 @@
 # powerbi-vizualizations-textFilter-dsmagic
-An improved version of the Power BI Text Filter visualization originally published by Microsoft, with more customization options available
+An improved version of the [Power BI Text Filter visualization originally published by Microsoft](https://github.com/microsoft/PowerBI-visuals-TextFilter), with more customization options available
 
 ## setup and dependencies
 * node.js LTS (latest stable release), this visual was tested and built with [node v16.13.2](https://nodejs.org/download/release/v16.13.2/)
